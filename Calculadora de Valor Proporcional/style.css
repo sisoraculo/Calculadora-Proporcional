@@ -1,0 +1,105 @@
+.body {
+    font-size: 0.9rem; /* Tamanho da fonte para telas maiores */
+    padding-top: 10px; /* Padding no topo */
+}
+
+.container {
+    padding: 20px; /* Padding geral do container */
+}
+
+.card {
+    padding: 15px; /* Padding dentro do card */
+}
+
+.card-header {
+    font-size: 1.4rem; /* Tamanho do título no header */
+}
+
+.form-label {
+    font-size: 1.05rem; /* Tamanho da fonte dos rótulos */
+}
+
+.form-control {
+    font-size: 1rem; /* Tamanho da fonte nos campos de input */
+    padding: 8px; /* Padding nos campos de input */
+}
+
+button {
+    font-size: 1.1rem; /* Tamanho da fonte do botão */
+    padding: 12px; /* Padding no botão */
+    margin-top: 10px;
+}
+
+h2 {
+    font-size: 1.4rem; /* Tamanho do valor proporcional */
+}
+h3{
+    margin-top: 10px;
+}
+
+p {
+    font-size: 1.1rem; /* Tamanho da fonte da quantidade de dias */
+    font-weight: bold;
+}
+
+/* Centralizar o conteúdo da div */
+.content-wrapper {
+    display: flex;
+    justify-content: center;  /* Centraliza horizontalmente */
+    align-items: flex-start;  /* Alinha ao topo verticalmente */
+    padding-top: 20px;  /* Adiciona um pouco de espaço no topo */
+    min-height: 100vh; /* Garante que a altura ocupe a tela inteira, mas com alinhamento no topo */
+}
+
+/* CSS Responsivo para telas pequenas (mobile) */
+@media (max-width: 768px) {
+    body {
+        font-size: 1rem; /* Ajusta o tamanho da fonte para telas menores */
+    }
+    h3{
+        font-size: 25px !important;
+        text-align: center;
+        }
+    .card {
+        padding: 15px; /* Reduz o padding no card para telas menores */
+    }
+    .card-header h3 {
+        font-size: 1.3rem; /* Reduz o tamanho do título no header */
+    }
+    .form-label {
+        font-size: 1rem; /* Ajusta o tamanho da fonte dos rótulos */
+    }
+    .form-control {
+        font-size: 1rem; /* Ajusta o tamanho da fonte nos campos de input */
+        padding: 8px; /* Reduz o padding nos campos de input */
+    }
+    button {
+        font-size: 1rem; /* Ajusta o tamanho da fonte do botão */
+        padding: 10px; /* Reduz o padding do botão */
+    }
+    .content-wrapper {
+        padding-top: 10px; /* Adiciona um pouco de padding nas laterais */
+    }
+}
+
+/* CSS Responsivo para telas menores que 480px (telas de smartphones muito pequenas) */
+@media (max-width: 480px) {
+    body {
+        font-size: 0.9rem; /* Ajusta ainda mais o tamanho da fonte */
+    }
+    h3{
+        font-size: 25px !important;
+        text-align: center;
+    }
+    .form-control {
+        font-size: 0.9rem; /* Ajusta o tamanho dos campos de input */
+        padding: 6px; /* Diminui o padding nos campos de input */
+    }
+    button {
+        font-size: 0.9rem; /* Diminui o tamanho da fonte do botão */
+        padding: 10px; /* Diminui o padding do botão */
+    }
+    .content-wrapper {
+        padding-top: 5px; /* Ajusta ainda mais o padding no topo para telas muito pequenas */
+    }
+}
